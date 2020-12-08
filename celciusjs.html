@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="cel" placeholder="enter">
+<input type="button" value="toforen" onclick="convertcelcius();" id="btn">
+<input type="button" value="tocelcius" onclick="convertfaren();" id="click">
+<script>
+function convertcelcius(){
+    var a=document.getElementById("cel").value;
+    var b=(a - 32) * 5 / 9;
+   document.getElementById("btn").innerHTML =console.log(b);
+   
+}
+function convertfaren(){
+      var c=document.getElementById("cel").value;
+      var d= (c * 9 )/ 5 + 32;
+      document.getElementById("click").innerHTML =console.log(d);
+}
+</script>
+</body>
+</html>
