@@ -1,0 +1,30 @@
+<html>
+<head>
+<body>
+<input type="text" onkeydown="myFunction()"><br><br>
+<button onclick="display()">display</button><br><br>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="ras1.png" alt="Smiley" width="32" height="32"><br><br>
+
+
+
+<script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px"
+}
+
+function display(){
+   alert("clicked event occured")
+}
+
+</script>
+</body>
+ </html>
